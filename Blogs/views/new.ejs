@@ -1,0 +1,25 @@
+<%- include('./partials/header') %>
+
+<form action="/blogs" method="post">
+    <section>
+        <label for="title">Title: </label>
+        <br>
+        <input type="text" name="title" id="title">
+    </section>
+    <br><br>
+    <section>
+        <label for="auth">Author: </label>
+        <br>
+        <input type="text" name="author" id="auth">
+    </section>
+    <br><br>
+    <section>
+        <label for="content">Content:</label>
+        <br>
+        <textarea name="content" id="content" cols="30" rows="4"></textarea>
+    </section>
+    <br><br>
+    <button type="submit">Add Blog</button>
+</form>
+
+<%- include('./partials/footer') %>

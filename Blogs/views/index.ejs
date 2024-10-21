@@ -1,0 +1,19 @@
+<%- include('./partials/header') %>
+
+<h1>Display all the Blogs</h1>
+<center><a href="/blogs/new"><button>New</button></a></center>
+<article>
+
+    <% for(let blog of allBlogs){ %>
+        <div>
+            <h1><%= blog.id      %></h1>
+            <h2><%= blog.title   %></h2>
+            <h3><%= blog.author  %></h3>
+            <p> <%= blog.content %></p>
+            <p> <a href="/blogs/<%=blog.id%>">Show</a> </p>
+
+        </div>
+    <% } %>
+</article>
+
+<%- include('./partials/footer') %>
